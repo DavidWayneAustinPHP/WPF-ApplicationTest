@@ -25,5 +25,16 @@
             <RowDefinition Height="*" />
             <RowDefinition Height="20" />
          </Grid.RowDefinitions>
+        <TextBlock Grid.Column="1" Grid.Row="1" FontSize="36" Text="WPF Form Demo" Grid.ColumnSpan="3" Margin="0,0,0,10"/>
+        <TextBlock Grid.Column="1" Grid.Row="2" Text="First Name" FontFamily="Segoe UI" Margin="10" />
+        <TextBox x:Name="firstNameText" Grid.Column="2" Grid.Row="2" Width="150" Margin="10"></TextBox>
+        <TextBlock Grid.Column="1" Grid.Row="3" Text="Last Name" FontFamily="Segoe UI" Margin="10" />
+        <TextBox x:Name="lastNameText" Grid.Column="2" Grid.Row="3" Width="150" Margin="10"></TextBox>
+        <TextBlock Grid.Column="1" Grid.Row="4" Text="Age" FontFamily="Segoe UI" Margin="10" />
+        <TextBox x:Name="ageText" Grid.Column="2" Grid.Row="4" Width="150" Margin="10"></TextBox>
+        <TextBlock Grid.Column="1" Grid.Row="5" Text="Message" FontFamily="Segoe UI" Margin="10" />
+        <TextBox x:Name="messageText" Grid.Column="2" Grid.Row="5" Width="150" Margin="10"></TextBox>
+
+        <Button x:Name="submitButton" Content="Add Info" Grid.Column="1" Grid.Row="6" Margin="10" Height="20" />
     </Grid>
 </Window>
