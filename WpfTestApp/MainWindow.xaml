@@ -35,6 +35,6 @@
         <TextBlock Grid.Column="1" Grid.Row="5" Text="Message" FontFamily="Segoe UI" Margin="10" />
         <TextBox x:Name="messageText" Grid.Column="2" Grid.Row="5" Width="150" Margin="10"></TextBox>
 
-        <Button x:Name="submitButton" Content="Add Info" Grid.Column="1" Grid.Row="6" Margin="10" Height="20" />
+        <Button x:Name="submitButton" Content="Add Info" Grid.Column="1" Grid.Row="6" Margin="10" Height="20" Click="SubmitButton_Click" />
     </Grid>
 </Window>

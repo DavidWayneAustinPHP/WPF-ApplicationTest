@@ -24,5 +24,10 @@ namespace WpfTestApp
         {
             InitializeComponent();
         }
+
+        private void SubmitButton_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show($"Enterred data {firstNameText.Text}");
+        }
     }
 }
