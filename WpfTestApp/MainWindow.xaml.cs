@@ -20,14 +20,28 @@ namespace WpfTestApp
     /// </summary>
     public partial class MainWindow : Window
     {
+        public List<Person> people = new List<Person>();
+
         public MainWindow()
         {
             InitializeComponent();
+
+            people.Add(new Person { FirstName = "John", LastName = "Smith" });
+            people.Add(new Person { FirstName = "Jo", LastName = "Smith" });
+            people.Add(new Person { FirstName = "Jeff", LastName = "Smith" });
+
+            myComboBox.ItemsSource = people;
         }
 
         private void SubmitButton_Click(object sender, RoutedEventArgs e)
         {
             MessageBox.Show($"Enterred data {firstNameText.Text}");
         }
+    }
+
+    public class Person
+    {
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
     }
 }
